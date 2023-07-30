@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.5](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.4...2.5.5) (2023-07-30)
+
+
+### Bug Fixes
+
+* chmod ([8a51fbc](https://github.com/zuzanawangle/buttercms-ruby/commit/8a51fbc6427064afa838ed928b39d8f3928077a8))
+
 ## [2.5.4](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.3...2.5.4) (2023-07-30)
 
 
