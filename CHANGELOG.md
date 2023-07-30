@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.7](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.6...2.5.7) (2023-07-30)
+
+
+### Bug Fixes
+
+* add secret ([62836f1](https://github.com/zuzanawangle/buttercms-ruby/commit/62836f1e6c44c0a793352c973f28a09fe14db6fa))
+
 ## [2.5.6](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.5...2.5.6) (2023-07-30)
 
 
