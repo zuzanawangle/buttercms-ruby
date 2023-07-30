@@ -3,23 +3,33 @@
 
 name: Publish Gem
 
-on: 
+on:
   push:
     branches:
       - master
 
 jobs:
   publish:
-    if: contains(github.event.head_commit.message, 'chore(release)') 
+    if: contains(github.event.head_commit.message, 'chore(release)')
     runs-on: ubuntu-22.04
 
     steps:
       - uses: actions/checkout@v3.5.3
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "2.7"
+      - run: gem build
+      - run: |
+          cat << EOF > ~/.gem/credentials
+          ---
+          :rubygems_api_key: ${RUBYGEMS_API_KEY}
+          EOF
+      - run: gem push *.gem
 
-      - name: Release Gem
-        uses: discourse/publish-rubygems-action@v3
-        env:
-          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
-          RELEASE_COMMAND: rake release
-          GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-          GIT_NAME: github-actions[bot]
+      # - name: Release Gem
+      #   uses: discourse/publish-rubygems-action@v3
+      #   env:
+      #     RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
+      #     RELEASE_COMMAND: rake release
+      #     GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+      #     GIT_NAME: github-actions[bot]
