@@ -4,7 +4,7 @@ $:.unshift(File.join(File.dirname(__FILE__), 'lib'))
 require 'buttercms/version'
 
 Gem::Specification.new do |s|
-  s.name = "buttercms-ruby"
+  s.name = "buttercms-ruby-zwg"
   s.version = ButterCMS::VERSION
   s.require_paths = ["lib"]
   s.summary = 'Ruby API client for ButterCMS'

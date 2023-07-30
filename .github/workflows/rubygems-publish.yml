@@ -1,0 +1,25 @@
+# This workflow will publish a gem to rubygems.org when a release is created
+# For more information see: # https://github.com/discourse/publish-rubygems-action
+
+name: Publish Gem
+
+on: 
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    if: contains(github.event.head_commit.message, 'chore(release)') 
+    runs-on: ubuntu-22.04
+
+    steps:
+      - uses: actions/checkout@v3.5.3
+
+      - name: Release Gem
+        uses: discourse/publish-rubygems-action@v3
+        env:
+          RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
+          RELEASE_COMMAND: rake release
+          GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_NAME: github-actions[bot]
