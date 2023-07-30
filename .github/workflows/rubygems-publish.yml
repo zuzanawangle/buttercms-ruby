@@ -20,6 +20,6 @@ jobs:
         uses: discourse/publish-rubygems-action@v3
         env:
           RUBYGEMS_API_KEY: ${{ secrets.RUBYGEMS_API_KEY }}
-          RELEASE_COMMAND: rake release
+          RELEASE_COMMAND: gem push
           GIT_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
           GIT_NAME: github-actions[bot]
