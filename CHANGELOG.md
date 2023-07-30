@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.3](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.2...2.5.3) (2023-07-30)
+
+
+### Bug Fixes
+
+* change release command ([f210865](https://github.com/zuzanawangle/buttercms-ruby/commit/f21086525c0f600c98ef12bc5046440de71eae17))
+
 ## [2.5.2](https://github.com/zuzanawangle/buttercms-ruby/compare/v2.5.1...2.5.2) (2023-07-30)
 
 
