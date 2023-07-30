@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.2](https://github.com/zuzanawangle/buttercms-ruby/compare/v2.5.1...2.5.2) (2023-07-30)
+
+
+### Bug Fixes
+
+* change tag format ([1522354](https://github.com/zuzanawangle/buttercms-ruby/commit/1522354c6695d4b8c03cc9e21abb0f32c4594b04))
+
 ## [2.5.1](https://github.com/zuzanawangle/buttercms-ruby/compare/v2.5.0...v2.5.1) (2023-07-30)
 
 
