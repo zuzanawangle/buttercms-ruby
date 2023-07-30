@@ -29,3 +29,4 @@ jobs:
           version-file: "lib/buttercms/version.rb"
           pull-request-title-pattern: "chore(release): ${version}"
           pull-request-header: ":robot: Merge this PR to release a new version"
+          include-v-in-tag: false
