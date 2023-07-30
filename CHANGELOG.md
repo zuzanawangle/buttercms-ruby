@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.5.4](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.3...2.5.4) (2023-07-30)
+
+
+### Bug Fixes
+
+* change action ([4a9d595](https://github.com/zuzanawangle/buttercms-ruby/commit/4a9d5958df63c5070a8fc76bc1ded26c5fb95cfd))
+
 ## [2.5.3](https://github.com/zuzanawangle/buttercms-ruby/compare/2.5.2...2.5.3) (2023-07-30)
 
 
